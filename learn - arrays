@@ -1,0 +1,34 @@
+//Array Accessment
+
+const famousSayings = ['Fortune favors the brave.', 'A joke is a very serious thing.', 'Where there is love there is life.'];
+const listItem = famousSayings[0];
+console.log(listItem);
+
+console.log(famousSayings[2]);
+
+console.log(famousSayings[3]);
+
+
+const objectives = ['Learn a new language', 'Read 52 books', 'Run a marathon'];
+
+//Count element number of objectives
+console.log(objectives.length);
+
+//Arrays and functions
+const concept = ['arrays', 'can', 'be', 'mutated','abc'];
+
+//change argument of an array by a function
+function changeArr(arr){
+  arr[3] = 'MUTATED';
+}
+
+changeArr(concept);
+console.log(concept);
+
+//remove argument of an array by a function
+function removeElement(newArr) {
+  newArr.pop();
+}
+
+removeElement(concept);
+console.log(concept);
